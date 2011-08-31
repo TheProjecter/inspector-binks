@@ -61,6 +61,8 @@
 				<groupId>ch.randelshofer</groupId>
 				<artifactId>quaqua</artifactId>
 				<version>8.0.alpha7</version>
+				<scope>system</scope>
+				<systemPath>${project.basedir}/../lib/quaqua/8.0.alpha7/quaqua.jar</systemPath>
 			</dependency>
 			
 			<dependency>
@@ -72,16 +74,30 @@
 			    <groupId>jsyntaxpane</groupId>
 			    <artifactId>jsyntaxpane</artifactId>
 			    <version>0.9.5-b29</version>
+			    <scope>system</scope>
+			    <systemPath>${project.basedir}/../lib/jsyntaxpane/0.9.5-b29/jsyntaxpane-0.9.5-b29.jar</systemPath>
 			</dependency>
 			<dependency>
 				<groupId>org.lobobrowser</groupId>
 				<artifactId>cobra</artifactId>
 				<version>0.98.4</version>
+				<scope>system</scope>
+				<systemPath>${project.basedir}/../lib/cobra/0.98.4/cobra.jar</systemPath>
 			</dependency>
 			<dependency>
 				<groupId>org.lobobrowser</groupId>
 				<artifactId>js</artifactId>
 				<version>0.98.4</version>
+				<scope>system</scope>
+				<systemPath>${project.basedir}/../lib/cobra/0.98.4/js.jar</systemPath>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.kenai.nbpwr</groupId>
+			    <artifactId>com-explodingpixels-macwidgets</artifactId>
+			    <version>0.9.5-07092009</version>
+			    <scope>system</scope>
+			    <systemPath>${project.basedir}/../lib/macwidgets/0.9.5/mac_widgets-0.9.5.jar</systemPath>
 			</dependency>
 			
 			<dependency>
