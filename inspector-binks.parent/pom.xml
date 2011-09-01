@@ -81,15 +81,15 @@
 				<groupId>org.lobobrowser</groupId>
 				<artifactId>cobra</artifactId>
 				<version>0.98.4</version>
-				<scope>system</scope>
-				<systemPath>${project.basedir}/../lib/cobra/0.98.4/cobra.jar</systemPath>
+				<!-- <scope>system</scope>
+				<systemPath>${project.basedir}/../lib/cobra/0.98.4/cobra.jar</systemPath> -->
 			</dependency>
 			<dependency>
 				<groupId>org.lobobrowser</groupId>
 				<artifactId>js</artifactId>
 				<version>0.98.4</version>
-				<scope>system</scope>
-				<systemPath>${project.basedir}/../lib/cobra/0.98.4/js.jar</systemPath>
+				<!-- <scope>system</scope>
+				<systemPath>${project.basedir}/../lib/cobra/0.98.4/js.jar</systemPath> -->
 			</dependency>
 			
 			<dependency>
@@ -131,6 +131,10 @@
     	<repository>
 			<id>JBoss repository</id>
 			<url>http://repository.jboss.org/nexus/content/groups/public/</url>
+		</repository>
+		<repository>
+			<id>Google repository</id>
+			<url>https://inspector-binks.googlecode.com/git/inspector-binks.parent/repository/</url>
 		</repository>
 	</repositories>
 </project>
