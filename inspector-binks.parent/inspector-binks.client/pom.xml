@@ -1,0 +1,123 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" 
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+		
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>inspector-binks.parent</artifactId>
+		<groupId>be.planetsizebrain</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+		<relativePath>..</relativePath>
+	</parent>
+	<artifactId>inspector-binks.client</artifactId>
+	<name>Inspector Binks Client Application</name>
+	<description>Inspector Binks Client Application</description>
+	
+	<dependencies>
+		<dependency>
+			<groupId>be.planetsizebrain</groupId>
+			<artifactId>inspector-binks.decompiler</artifactId>
+		</dependency>
+	
+		<dependency>
+            <groupId>de.schlichtherle.truezip</groupId>
+            <artifactId>truezip-file</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.schlichtherle.truezip</groupId>
+            <artifactId>truezip-driver-tar</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.schlichtherle.truezip</groupId>
+            <artifactId>truezip-driver-tzp</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>de.schlichtherle.truezip</groupId>
+            <artifactId>truezip-driver-zip</artifactId>
+        </dependency>
+        
+		<dependency>
+		    <groupId>org.simplericity.macify</groupId>
+		    <artifactId>macify</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.randelshofer</groupId>
+			<artifactId>quaqua</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>com.kenai.nbpwr</groupId>
+		    <artifactId>com-explodingpixels-macwidgets</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>jgoodies</groupId>
+		    <artifactId>forms</artifactId>
+		    <version>1.0.5</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.apache.tika</groupId>
+			<artifactId>tika-core</artifactId>
+		</dependency>
+		<dependency>
+		    <groupId>jsyntaxpane</groupId>
+		    <artifactId>jsyntaxpane</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.lobobrowser</groupId>
+			<artifactId>cobra</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.lobobrowser</groupId>
+			<artifactId>js</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.sonatype.grrrowl</groupId>
+			<artifactId>grrrowl</artifactId>
+		</dependency>
+		<dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+        </dependency>
+       
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+	</dependencies>
+	
+	<profiles>
+		<profile>
+			<id>package-osx-bundle</id>
+			<activation>
+				<os>
+					<family>mac</family>
+				</os>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>osxappbundle-maven-plugin</artifactId>
+						<version>1.0-alpha-1</version>
+						<configuration>
+							<mainClass>be.planetsizebrain.inspectorbinks.InspectorBinks</mainClass>
+							<bundleName>Inspector Binks</bundleName>
+							<iconFile>${basedir}/src/main/resources/jarjar.icns</iconFile>
+							<jvmVersion>1.5+</jvmVersion>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<!-- append to the packaging phase. -->
+								<goals>
+									<goal>bundle</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>
