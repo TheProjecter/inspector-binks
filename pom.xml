@@ -120,7 +120,7 @@
 	<repositories>
 		<repository>
 			<id>Google repository</id>
-			<url>http://inspector-binks.googlecode.com/git/inspector-binks.parent/repository/</url>
+			<url>http://inspector-binks.googlecode.com/git/repository/</url>
 		</repository>
 		<repository>
 			<id>Simplericity</id>
