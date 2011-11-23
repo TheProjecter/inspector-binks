@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.kenai.nbpwr</groupId>
+        <artifactId>wrappers</artifactId>
+        <version>201002261215</version>
+    </parent>
+
+    <artifactId>com-explodingpixels-macwidgets</artifactId>
+    <packaging>nbm</packaging>
+    <version>0.9.5-201002261215</version>
+    <name>Wrappers - Mac Widgets</name>
+    <description>Mac Widgets</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.explodingpixels</groupId>
+            <artifactId>mac_widgets</artifactId>
+            <version>0.9.5</version>
+        </dependency>
+        <dependency>
+            <groupId>com.kenai.nbpwr</groupId>
+            <artifactId>com-jgoodies-forms</artifactId>
+            <version>1.2.1-201002241208</version>
+        </dependency>
+        <dependency>
+            <groupId>com.jgoodies</groupId>
+            <artifactId>forms</artifactId>
+            <version>1.2.1</version>
+            <scope>provided</scope>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <publicPackages>
+                        <publicPackage>com.explodingpixels</publicPackage>
+                        <publicPackage>com.explodingpixels.border</publicPackage>
+                        <publicPackage>com.explodingpixels.data</publicPackage>
+                        <publicPackage>com.explodingpixels.macwidgets</publicPackage>
+                        <publicPackage>com.explodingpixels.macwidgets.plaf</publicPackage>
+                        <publicPackage>com.explodingpixels.painter</publicPackage>
+                        <publicPackage>com.explodingpixels.swingx</publicPackage>
+                        <publicPackage>com.explodingpixels.util</publicPackage>
+                        <publicPackage>com.explodingpixels.widgets</publicPackage>
+                        <publicPackage>com.explodingpixels.widgets.plaf</publicPackage>
+                    </publicPackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+
+
+

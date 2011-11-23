@@ -1,0 +1,6 @@
+#NOTE: This is an internal implementation file, its format can be changed without prior notice.
+#Mon Nov 21 23:56:35 CET 2011
+https\://repository.aca-it.be\:8443/nexus/content/groups/public/.lastUpdated=1321916195316
+https\://repository.aca-it.be\:8443/nexus/content/groups/public/.error=
+https\://repository.aca-it.be/nexus/content/groups/public/.error=Could not transfer artifact org.simplericity.macify\:macify\:pom\:1.4 from/to aca-nexus (https\://repository.aca-it.be/nexus/content/groups/public)\: java.net.ConnectException\: Connect times out
+60c0d83f8f38d5f9aa54f35163d23413e57b5a5b@default-https\://repository.aca-it.be/nexus/content/groups/public/.lastUpdated=1320878836678

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>com.kenai.nbpwr</groupId>
+        <artifactId>wrappers</artifactId>
+        <version>201002241055</version>
+    </parent>
+
+    <artifactId>com-jgoodies-forms</artifactId>
+    <packaging>nbm</packaging>
+    <version>1.2.1-201002241208</version>
+    <name>Wrappers - JGoodies Forms</name>
+    <description>JGoodies Forms</description>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.jgoodies</groupId>
+            <artifactId>forms</artifactId>
+            <version>1.2.1</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>nbm-maven-plugin</artifactId>
+                <configuration>
+                    <publicPackages>
+                        <publicPackage>com.jgoodies</publicPackage>
+                        <publicPackage>com.jgoodies.forms</publicPackage>
+                        <publicPackage>com.jgoodies.forms.builder</publicPackage>
+                        <publicPackage>com.jgoodies.forms.debug</publicPackage>
+                        <publicPackage>com.jgoodies.forms.layout</publicPackage>
+                        <publicPackage>com.jgoodies.forms.util</publicPackage>
+                        <publicPackage>com.jgoodies.forms.factories</publicPackage>
+                    </publicPackages>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
+
+
+
+
+
